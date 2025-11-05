@@ -1,7 +1,8 @@
+import java.util.Scanner;
 public class WordMatch {
     private String secret;
 
-    public WordMatch(String word){
+    public WordMatch( String word){
         secret = word;
     }
 
