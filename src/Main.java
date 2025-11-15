@@ -16,13 +16,15 @@ public class Main {
         String guess1= line.substring(space1+1, space2);
         String guess2= line.substring(space2+1);
         game[index] = new WordMatch(secret);
-        score += game[index].scoreGuess(guess1)+game[index].scoreGuess(guess2);
+        String better = game[index].findBetterGuess(guess1, guess2);
+        score += game[index].scoreGuess(better);
         index++;
         }
         return score;
     }
     public static void main(String[] args) throws FileNotFoundException{
        System.out.println(calc());
+
     }
 
 }
