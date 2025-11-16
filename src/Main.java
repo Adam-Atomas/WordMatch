@@ -22,6 +22,7 @@ public class Main {
         }
         return score;
     }
+
     public static void main(String[] args) throws FileNotFoundException{
        System.out.println(calc());
 
